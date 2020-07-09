@@ -1,0 +1,39 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    background-color: hsl(200, 90%, 50%);
+
+}
+#app{
+    display: flex;
+    justify-content: center;
+
+}
+
+#content{
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2rem;
+    margin: 4rem;    
+    animation: fade-in 350ms ease-in-out;
+}
+
+@keyframes fade-in{
+    0%{
+        transform: translateY(100px);
+        opacity: 0
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1.0;
+    }
+}
