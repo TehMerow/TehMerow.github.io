@@ -1,9 +1,11 @@
 'use strict'
 import {Home} from "./modules/home.js"
 import {Sketchfab} from "./modules/sketchfab.js"
+import {Itch} from "./modules/itch.js"
 const routes = [
     {path : '/', component : Home},
     {path : '/sketchfab', component : Sketchfab},
+    {path : '/itch', component : Itch},
     
 ]
 

@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>github page</title>
+    <title>TehMerow on Github.io</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -11,6 +11,7 @@
             <ul id="nav-links">
                 <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="/sketchfab">Sketchfab</router-link></li>
+                <li><router-link to="/itch">Itch.io</router-link></li>
             </ul>
         </header>
         <router-view></router-view>
@@ -84,6 +85,35 @@
                 </div>
                 
                 
+            </div>
+            <div id="block" class="load-anim">
+                <h1>View all at <a :href="social_links[1].href">{{social_links[1].name}}</a></h1>
+            </div>
+        </div>
+    </template>
+
+    <template id="itch-template">
+        <div id="itch">
+            <div id="block" class="load-anim">
+                <h3>Itch.io is a storefront for all sorts of things</h3>
+            </div>
+
+            <div id="block" class="load-anim embeds">
+                <div class="itch-embed-wrapper">
+                    <iframe src="https://itch.io/embed/786526?dark=true" width="552" height="167" frameborder="0"><a href="https://tehmerow.itch.io/pbr-bake-tools">PBR Bake Tools by Merow</a></iframe>
+                </div>
+                <div class="itch-embed-wrapper">
+                    <iframe src="https://itch.io/embed/627999" width="552" height="167" frameborder="0"><a href="https://tehmerow.itch.io/kk-slider-sfz">K.K. Slider Sample Pack by Merow</a></iframe>
+                </div>
+                <div class="itch-embed-wrapper">
+                    <iframe src="https://itch.io/embed/553535?dark=true" width="552" height="167" frameborder="0"><a href="https://tehmerow.itch.io/a-walk-in-the-woods">A Walk in the Woods by Merow</a></iframe>
+                </div>
+                <div class="itch-embed-wrapper">
+                    <iframe src="https://itch.io/embed/695136?dark=true" width="552" height="167" frameborder="0"><a href="https://tehmerow.itch.io/rythm-curse">Rhythm Curse by Merow</a></iframe>
+                </div>
+                <div id="block" class="load-anim">
+                    <h1>View all at <a :href="social_links[2].href">{{social_links[2].name}}</a></h1>
+                </div>
             </div>
         </div>
     </template>

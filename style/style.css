@@ -56,6 +56,17 @@ header #nav-links {
 .embeds * {
   margin: 0.1em;
 }
+#itch {
+  width: 75%;
+  justify-self: center;
+}
+#itch .embeds {
+  display: flex;
+  flex-flow: row wrap;
+}
+#itch .itch-embed-wrapper {
+  margin: 0.1em;
+}
 *,
 *::before,
 *::after {

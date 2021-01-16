@@ -1,10 +1,9 @@
 'use strict'
-
 import {social_links} from "./misc/social_links.js"
 
 
-export const Sketchfab  = {
-    template: "#sketchfab-template",
+export const Itch = {
+    template : "#itch-template",
     data(){
         return{
             social_links
