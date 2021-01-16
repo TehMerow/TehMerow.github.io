@@ -1,0 +1,22 @@
+{
+  "name": "tehmerow_github_page",
+  "version": "1.0.0",
+  "description": "tehmerows github_page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TehMerow/TehMerow.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TehMerow/TehMerow.github.io/issues"
+  },
+  "homepage": "https://github.com/TehMerow/TehMerow.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.3.0"
+  }
+}

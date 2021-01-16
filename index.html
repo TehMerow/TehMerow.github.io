@@ -7,11 +7,24 @@
 </head>
 <body>
     <div id="app">
-        <div id="content">
-            <h1>Hello!</h1>
-            <h3>Welcome to my github page</h3>
-            <p>I hope you enjoy your stay!</p>
-        </div>
+        <header>
+            <ul id="nav-links">
+                <li><router-link to="/">Home</router-link></li>
+            </ul>
+        </header>
+        <router-view></router-view>
+        <footer></footer>
     </div>
+
+
+    <template id="home-template">
+        <h1>home</h1>
+    </template>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue-router@4.0.3/dist/vue-router.global.js"></script>
+    <script type="module" src="scripts/app.js"></script>
+
+
 </body>
 </html>
