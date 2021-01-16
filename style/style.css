@@ -44,6 +44,18 @@ header #nav-links {
     transform: translateY(0px);
   }
 }
+#sketchfab {
+  width: 90%;
+  justify-self: center;
+}
+.embeds {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.embeds * {
+  margin: 0.1em;
+}
 *,
 *::before,
 *::after {
@@ -74,7 +86,6 @@ a {
   color: var(--font-color);
 }
 #block {
-  background-color: var(--bg-color);
   padding: 2em;
   margin: 1em;
 }
