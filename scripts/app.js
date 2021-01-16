@@ -13,7 +13,11 @@ const router = VueRouter.createRouter({
 
 
 const app = Vue.createApp({
-    
+    data(){
+        return {
+            
+        }
+    }
 })
 app.use(router)
 

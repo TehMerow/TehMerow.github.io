@@ -19,19 +19,17 @@
 
     <template id="home-template">
         <div id="home">
-            <div id="block">
+            <div id="block" class="load-anim">
                 <h1>Hello There</h1>
                 <p>I'm TehMerow, and I make all sorts of things online!</p>
                 <p>You can also Call me Merow</p>
             </div>
-            <div id="block" class="home-social">
+            <div id="block" class="home-social load-anim">
                 <h3>You can find me all over the place like</h3>
                 <ul id="social-links">
-                    <li><a href="https://twitter.com/TehMerow">Twitter</a></li>
-                    <li><a href="https://tehmerow.itch.io">Itch.io</a></li>
-                    <li><a href="https://sketchfab.com/TehMerow">Sketchfab</a></li>
-                    <li><a href="https://soundcloud.com/tehmerow">Soundcloud</a></li>
-                    <li><a href="https://tehmerow.bandcamp.com">Bandcamp</a></li>
+                    <li v-for="item in social_links">
+                        <a v-bind:href="item.href">{{item.name}} - {{item.flavor}}</a>
+                    </li>
                 </ul>
                 
 
