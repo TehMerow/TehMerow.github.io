@@ -10,6 +10,7 @@
         <header>
             <ul id="nav-links">
                 <li><router-link to="/">Home</router-link></li>
+                <li><router-link to="/sketchfab">Sketchfab</router-link></li>
             </ul>
         </header>
         <router-view></router-view>
@@ -38,6 +39,13 @@
         </div>
     </template>
 
+    <template id="sketchfab-template">
+        <div id="sketchfab">
+            <div id="block" class="load-anim">
+                <h3>I've been doing 3D modeling since 2014 and in 2019 was confident enough to start posting them to sketchfab</h3>
+            </div>
+        </div>
+    </template>
     <template id="content-block-template">
         <div id="content-block"></div>
     </template>
