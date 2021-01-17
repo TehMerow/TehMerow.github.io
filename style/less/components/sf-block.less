@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: .5fr 1fr;
     grid-template-rows: .5fr 1fr .5fr;
-    min-height: 50vh;
+    min-height: 75vh;
     grid-gap: 1em;
 
     background-color: var(--bg-color);
@@ -36,5 +36,36 @@
             grid-column: 1;
             grid-row: 1 / span 2;
         }
+    }
+}
+
+#sf-embed{
+    width: 100%;
+    height: 100%;
+
+    
+    button{
+        --size: 10em;
+        background: none;
+        border: none;
+        height: var(--size);
+        width: var(--size);
+        cursor: pointer;
+    }
+    #sf-embed-placeholder{
+        grid-row:1;
+        grid-column: 1;
+        height: 100%;
+        width: 100%;
+        
+        background-size: cover;
+        background-position: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        height: 100%;
+        width: 100%;
     }
 }
