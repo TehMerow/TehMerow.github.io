@@ -25,3 +25,23 @@ const app = Vue.createApp({
 app.use(router)
 
 app.mount("#app")
+
+
+// sticky header
+
+const sticky_header = () => {
+    if(scrollY > 100){
+        document.querySelector('header').classList.add("sticky")
+    }
+    else{
+        document.querySelector('header').classList.remove("sticky")
+    }
+}
+
+const update = () => {
+    requestAnimationFrame(update)
+
+    sticky_header()
+}
+
+update();

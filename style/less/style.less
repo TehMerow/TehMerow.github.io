@@ -1,18 +1,12 @@
-@import "home";
-@import "header";
-@import "animations";
-@import "sketchfab";
-@import "itch";
-@import "components/sf-block";
-@import "components/link-button";
+
 
 *,*::before,*::after{
     box-sizing: border-box;
 }
 :root{
-    --bg-color: hsl(220, 20%, 20%);
-    --bg-color-dim: hsl(220, 15%, 10%);
-    --font-color: #fff;
+    --bg-color: hsl(220, 0%, 100%);
+    --bg-color-dim: hsl(220, 0%, 90%);
+    --font-color: #111;
 
 }
 html,body{
@@ -21,7 +15,9 @@ html,body{
     /* height: 100%; */
     background-color: var(--bg-color-dim)
 }
-
+body{
+    counter-reset: delay-increment;
+}
 a{
     color: var(--font-color);
     border-bottom: 2px solid var(--font-color);
@@ -30,8 +26,7 @@ a{
 #app{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: .5fr auto 1fr;
-    height: 100%;
+    grid-template-rows: 3em auto 1fr;
 
     color: var(--font-color);
 }
@@ -42,4 +37,20 @@ a{
     margin: 1em;
 }
 
+// @media(prefers-color-scheme: dark){
+//     :root{
+//         --bg-color: hsl(220, 20%, 20%);
+//         --bg-color-dim: hsl(220, 15%, 10%);
+//         --font-color: #fff;
+    
+//     }
+// }
 
+
+@import "home";
+@import "header";
+@import "animations";
+@import "sketchfab";
+@import "itch";
+@import "components/sf-block";
+@import "components/link-button";

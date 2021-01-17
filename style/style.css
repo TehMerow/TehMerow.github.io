@@ -1,16 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-color-dim: hsl(0, 0%, 90%);
+  --font-color: #111;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  background-color: var(--bg-color-dim);
+}
+body {
+  counter-reset: delay-increment;
+}
+a {
+  color: var(--font-color);
+  border-bottom: 2px solid var(--font-color);
+  text-decoration: none;
+}
+#app {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3em auto 1fr;
+  color: var(--font-color);
+}
+#block {
+  padding: 2em;
+  margin: 1em;
+}
 #home {
   width: 50%;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-flow: column nowrap;
   justify-self: center;
   grid-row: 2;
   grid-column: 1;
-  padding: 1em;
-  margin: 1em;
 }
 #home #social-links * {
   list-style: none;
   margin-top: 1em;
+}
+#home #banner-image {
+  background-size: cover;
+  background-position: 50%;
+  height: 50ch;
+  width: 100vw;
+  align-self: center;
 }
 header {
   width: 100%;
@@ -18,7 +58,12 @@ header {
   grid-row: 1;
   background-color: var(--bg-color);
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto 0.5fr;
+  height: 3em;
+  top: 0;
+  position: relative;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 header li {
   text-decoration: none;
@@ -27,12 +72,79 @@ header li {
 header #nav-links {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   grid-column: 3;
   align-items: center;
 }
+.sticky {
+  position: fixed;
+  height: 6em;
+  top: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
 .load-anim {
-  animation: load-anim 1s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: load-anim 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  counter-increment: delay-increment;
+}
+.load-anim:nth-child(1) {
+  animation-delay: 100ms;
+}
+.load-anim:nth-child(2) {
+  animation-delay: 200ms;
+}
+.load-anim:nth-child(3) {
+  animation-delay: 300ms;
+}
+.load-anim:nth-child(4) {
+  animation-delay: 400ms;
+}
+.load-anim:nth-child(5) {
+  animation-delay: 500ms;
+}
+.load-anim:nth-child(6) {
+  animation-delay: 600ms;
+}
+.load-anim:nth-child(7) {
+  animation-delay: 700ms;
+}
+.load-anim:nth-child(8) {
+  animation-delay: 800ms;
+}
+.load-anim:nth-child(9) {
+  animation-delay: 900ms;
+}
+.load-anim:nth-child(10) {
+  animation-delay: 1000ms;
+}
+.load-anim:nth-child(11) {
+  animation-delay: 1100ms;
+}
+.load-anim:nth-child(12) {
+  animation-delay: 1200ms;
+}
+.load-anim:nth-child(13) {
+  animation-delay: 1300ms;
+}
+.load-anim:nth-child(14) {
+  animation-delay: 1400ms;
+}
+.load-anim:nth-child(15) {
+  animation-delay: 1500ms;
+}
+.load-anim:nth-child(16) {
+  animation-delay: 1600ms;
+}
+.load-anim:nth-child(17) {
+  animation-delay: 1700ms;
+}
+.load-anim:nth-child(18) {
+  animation-delay: 1800ms;
+}
+.load-anim:nth-child(19) {
+  animation-delay: 1900ms;
+}
+.load-anim:nth-child(20) {
+  animation-delay: 2000ms;
 }
 @keyframes load-anim {
   0% {
@@ -47,6 +159,17 @@ header #nav-links {
 #sketchfab {
   width: 75%;
   justify-self: center;
+  display: flex;
+  flex-flow: column nowrap;
+  grid-row: 2;
+}
+#sketchfab #view-all {
+  margin: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 50%;
+  align-self: center;
 }
 .embeds {
   display: flex;
@@ -114,37 +237,4 @@ header #nav-links {
 }
 #link-button:hover {
   background-color: hsl(200, 90%, 30%);
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-:root {
-  --bg-color: hsl(220, 20%, 20%);
-  --bg-color-dim: hsl(220, 15%, 10%);
-  --font-color: #fff;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  /* height: 100%; */
-  background-color: var(--bg-color-dim);
-}
-a {
-  color: var(--font-color);
-  border-bottom: 2px solid var(--font-color);
-  text-decoration: none;
-}
-#app {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 0.5fr auto 1fr;
-  height: 100%;
-  color: var(--font-color);
-}
-#block {
-  padding: 2em;
-  margin: 1em;
 }
