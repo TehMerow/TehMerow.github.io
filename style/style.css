@@ -101,6 +101,20 @@ header #nav-links {
   grid-column: 1;
   grid-row: 1 / span 2;
 }
+#link-button {
+  background-color: hsl(200, 90%, 50%);
+  color: #fff;
+  border: none;
+  padding: 1em;
+  display: inline-block;
+  font-size: 1.2em;
+  transition: 350ms cubic-bezier(0.19, 1, 0.22, 1);
+  display: flex;
+  align-items: center;
+}
+#link-button:hover {
+  background-color: hsl(200, 90%, 30%);
+}
 *,
 *::before,
 *::after {
