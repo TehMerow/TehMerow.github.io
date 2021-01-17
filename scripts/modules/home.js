@@ -13,6 +13,9 @@ export const Home = {
         return{
             social_links
         }
+    },
+    mounted(){
+        document.title = "TehMerow - Home"
     }
     
 }

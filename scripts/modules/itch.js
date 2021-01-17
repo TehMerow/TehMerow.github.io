@@ -8,5 +8,8 @@ export const Itch = {
         return{
             social_links
         }
+    },
+    mounted(){
+        document.title = "TehMerow - Itch.io"
     }
 }
