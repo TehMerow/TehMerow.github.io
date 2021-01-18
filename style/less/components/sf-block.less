@@ -4,7 +4,6 @@
     grid-template-rows: .5fr 1fr .5fr;
     min-height: 75vh;
     grid-gap: 1em;
-
     background-color: var(--bg-color);
     padding: 2em;
     margin: 2em;
@@ -58,8 +57,8 @@
         height: 100%;
         width: 100%;
         
-        background-size: cover;
-        background-position: 50%;
+        background-size: cover 120%;
+        background-position: 50% 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,5 +66,10 @@
     img{
         height: 100%;
         width: 100%;
+        transition: 150ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    img:hover{
+        stroke: #444;
+        stroke-width: 16px;
     }
 }

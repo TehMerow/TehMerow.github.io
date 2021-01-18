@@ -10,6 +10,10 @@
 <body>
     <div id="app">
         <header>
+            <ul id="social-links">
+                <social-icon :href="social_glyphs[0].href" :icon="social_glyphs[0].icon"></social-icon>
+                <social-icon :href="social_glyphs[1].href" :icon="social_glyphs[1].icon"></social-icon>
+            </ul>
             <ul id="nav-links">
                 <li>
                     <router-link to="/">Home</router-link>

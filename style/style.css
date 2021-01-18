@@ -34,12 +34,16 @@ a {
   margin: 1em;
 }
 #home {
-  width: 50%;
+  width: 75%;
   display: flex;
   flex-flow: column nowrap;
   justify-self: center;
   grid-row: 2;
   grid-column: 1;
+}
+#home #social-links {
+  display: flex;
+  flex-flow: row wrap;
 }
 #home #social-links * {
   list-style: none;
@@ -58,7 +62,7 @@ header {
   grid-row: 1;
   background-color: var(--bg-color);
   display: grid;
-  grid-template-columns: 1fr auto 0.5fr;
+  grid-template-columns: 1fr 1fr;
   height: 3em;
   top: 0;
   position: relative;
@@ -73,14 +77,41 @@ header #nav-links {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  grid-column: 3;
-  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+header #social-links {
+  display: flex;
+  flex-flow: row nowrap;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  margin-right: 2em;
+}
+header #social-links a {
+  border: none;
+}
+header #social-links #social-icon {
+  --size: 2em;
+  height: var(--size);
+  width: var(--size);
+  margin-left: 1em;
+}
+header #social-links #social-icon img {
+  height: 100%;
+  width: 100%;
 }
 .sticky {
   position: fixed;
   height: 6em;
   top: 0;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.sticky #social-links {
+  align-items: center;
+}
+.sticky #nav-links {
+  align-items: center;
 }
 .load-anim {
   animation: load-anim 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -241,8 +272,8 @@ header #nav-links {
   grid-column: 1;
   height: 100%;
   width: 100%;
-  background-size: cover;
-  background-position: 50%;
+  background-size: cover 120%;
+  background-position: 50% 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,6 +281,11 @@ header #nav-links {
 #sf-embed img {
   height: 100%;
   width: 100%;
+  transition: 150ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+#sf-embed img:hover {
+  stroke: #444;
+  stroke-width: 16px;
 }
 #link-button {
   background-color: hsl(200, 90%, 50%);
@@ -264,4 +300,32 @@ header #nav-links {
 }
 #link-button:hover {
   background-color: hsl(200, 90%, 30%);
+}
+#social-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  flex-grow: 0;
+  background-color: var(--bg-color);
+  padding: 2em;
+  grid-gap: 2em;
+  margin: 0.5em;
+}
+#social-card h3 {
+  grid-row: 1;
+  grid-column: 1;
+}
+#social-card p {
+  grid-row: 2;
+  grid-column: 1;
+}
+#social-card #link-button {
+  grid-row: 3;
+  grid-column: 1;
+}
+#social-card img {
+  grid-row: 1 / span 3;
+  grid-column: 2;
+  height: 100%;
+  width: 100%;
 }

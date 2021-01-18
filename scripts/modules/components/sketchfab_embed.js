@@ -16,7 +16,7 @@ const sketchfab_embed_template_string = `
 `
 
 
-export const Sketchfab_Embed = {
+export default {
     props: {
         link_to_embed: String,
         link_to_bg: String
@@ -34,5 +34,11 @@ export const Sketchfab_Embed = {
         this.full_link = this.link_to_embed + this.embed_end
         this.bg_img = `url('${this.link_to_bg}')`
     },
+    methods: {
+        parallax(){
+            console.log('scroll_y')
+        },
+    },
     template: sketchfab_embed_template_string 
 }
+

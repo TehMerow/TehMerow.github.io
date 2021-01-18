@@ -1,5 +1,5 @@
 'use strict'
-import {social_links} from "./misc/social_links.js"
+import social_links from "./misc/social_links.js"
 
 
 export const Itch = {

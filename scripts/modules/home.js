@@ -1,6 +1,7 @@
 'use strict'
 import {Content_Block} from './components/content_block.js'
-import {social_links} from './misc/social_links.js'
+import social_links from './misc/social_links.js'
+import Social_Card from "./components/social_card.js"
 
 
 const home_template_string = `
@@ -13,11 +14,18 @@ const home_template_string = `
     </div>
     <div id="block" class="home-social load-anim">
         <h3>You can find me all over the place like</h3>
-        <ul id="social-links">
-            <li v-for="item in social_links">
-                <a v-bind:href="item.href">{{item.name}} - {{item.flavor}}</a>
-            </li>
-        </ul>
+        <div id="social-links">
+            
+            <social-card 
+                v-for="item in social_links"
+                :title="item.name"
+                :body="item.flavor"
+                :link="item.href"
+                :icon="item.icon"
+                ></social-card>
+        
+            
+        </div>
 
 
 
@@ -25,13 +33,16 @@ const home_template_string = `
 </div>
 
 `
+let heck = `
 
+`
 
 export const Home = {
     template : home_template_string,
 
     components: {
-        "content-block" : Content_Block
+        "content-block" : Content_Block,
+        "social-card" : Social_Card,
     },
 
     data(){

@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" ><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="M0 0h24v24H0z" fill="none"/>
+ <path d="m12 0.15139c-6.5404 0-11.849 5.3082-11.849 11.849 0 6.5404 5.3082 11.849 11.849 11.849 6.5404 0 11.849-5.3082 11.849-11.849 0-6.5404-5.3082-11.849-11.849-11.849zm-2.3697 17.18v-10.664l7.1092 5.3319z" stroke-width="1.1849"/>
+ <path d="m9.6414 12c0-2.8924 0.011946-5.259 0.026547-5.259 0.041647 0 7.0013 5.2277 7.0013 5.259 0 0.03128-6.9597 5.259-7.0013 5.259-0.014601 0-0.026547-2.3665-0.026547-5.259z" fill="#fff"/>
+</svg>

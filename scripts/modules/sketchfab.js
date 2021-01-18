@@ -1,9 +1,9 @@
 'use strict'
 
-import {social_links} from "./misc/social_links.js"
-import {Sketchfab_Block} from "./components/sketchfab_block.js"
-import {Link_Button} from "./components/link-button.js"
-import {Sketchfab_Embed} from "./components/sketchfab_embed.js"
+import social_links from "./misc/social_links.js"
+import Sketchfab_Block from "./components/sketchfab_block.js"
+import Link_Button from "./components/link-button.js"
+import Sketchfab_Embed from "./components/sketchfab_embed.js"
 
 const sketchfab_template_string = `
 <div id="sketchfab">

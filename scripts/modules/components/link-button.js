@@ -3,7 +3,7 @@ const link_button_template = `
     <a id="link-button" :href="link">{{text}}</a>
 `
 
-export const Link_Button = {
+export default {
     props: {
         link : String,
         text : String

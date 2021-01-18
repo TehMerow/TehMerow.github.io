@@ -1,6 +1,6 @@
 'use strict'
 
-import {Link_Button} from "./../components/link-button.js"
+import Link_Button from "./../components/link-button.js"
 
 const template_string = 
 `
@@ -14,7 +14,7 @@ const template_string =
 `
 
 
-export const Sketchfab_Block = {
+export default {
     props: {
         title: String,
         body: String,
