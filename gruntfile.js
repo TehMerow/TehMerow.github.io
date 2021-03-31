@@ -10,10 +10,15 @@ module.exports = (grunt) =>{
                     'style/style.css' : 'style/less/style.less'
                 }
             }
+        },
+        watch:{
+            tasks: ['less'],
+            files: "**/*.less"
         }
     })
 
     grunt.loadNpmTasks('grunt-contrib-less')
+    grunt.loadNpmTasks('grunt-contrib-watch')
     
-    grunt.registerTask('default', ['less'])
+    grunt.registerTask('default', ['watch'])
 }

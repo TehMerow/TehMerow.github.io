@@ -4,12 +4,14 @@
 import Link_Button from "./link-button.js"
 
 const social_card_template = `
-    <div id="social-card" class="load-anim">
-        <h3>{{title}}</h3>
-        <p>{{body}}</p>
-        <link-button :link="link" :text="link_text"></link-button>
-        <img :src="icon" alt="social-icon"/>
+    <a id="social-card" :href="link" class="load-anim" >
+
+    <img :src=icon></img> 
+
+    <div class="text">
+        <h1>{{title}}</h1>
     </div>
+    </a>
 `
 
 
