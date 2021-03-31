@@ -13,7 +13,8 @@ html,body{
     margin: 0;
     padding: 0;
     /* height: 100%; */
-    background-color: var(--bg-color)
+    background-color: var(--bg-color);
+    font-size: 22px;
 }
 body{
     counter-reset: delay-increment;
@@ -37,6 +38,13 @@ a{
     margin: 1em;
 }
 
+
+#divider.divider-dark{
+    fill: var(--bg-color);
+}
+#divider.divider-light{
+    fill: var(--font-color);
+}
 // @media(prefers-color-scheme: dark){
 //     :root{
 //         --bg-color: hsl(220, 20%, 20%);

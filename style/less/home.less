@@ -1,12 +1,20 @@
 #home{
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
-
-    justify-self: center;
+    // justify-self: center;
 
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 1 / span 3;
+    position: relative;
+
+    
+    #block{
+        padding: 16em;
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
 
 
     #social-links{
@@ -29,5 +37,18 @@
         align-self: center;
 
     }
+
 }
 
+
+    
+.light{
+    background-color: #eceff4 ;
+    color: #2e3440;
+    
+}
+.dark{
+    
+    color: #eceff4 ;
+    background-color: #2e3440;
+}
